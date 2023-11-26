@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <title>Request a Service - Home Service Website</title>
+  <link rel="stylesheet" href="becomeprofessional.css">
+  <link rel="stylesheet" href="./css/multipurpose.css">
+</head>
+<script>
+  function Saloon() {
+    window.location.href = "Saloon.html"
+  }
+  function aboutus() {
+    window.location.href = "aboutus.html"
+  }
+
+  function blog() {
+    window.location.href = "blog.html"
+
+  }
+
+  function form() {
+    window.location.href = "becomeProfessional.html"
+  }
+</script>
+
+<body>
+
+
+  <section id="headerBlock">
+    <article>
+      <div class="leftBlock">
+        <div class="logo">
+          <img src="images/Multi-Purpose Hiring System (6).png" alt="logo" onclick="index()">
+        </div>
+
+        <div class="leftmenu">
+          <ul>
+            <li>
+              <a href="#" onclick="aboutus()">About us</a>
+            </li>
+            <li>
+              <a href="#" onclick="blog()">Contact Us</a>
+            </li>
+            <li>
+              <section id="professionslider">
+                <section class="professions">
+                  <a href="#">Become A Professional </a>
+                  <!-- <select>
+                        <option value="Doctor"> Doctor</option>
+                        <option value="Doctor">Hair stylist</option>
+                        <option value="Doctor">Plumber</option>
+                        <option value="Doctor">Carpenter</option>
+                        <option value="Doctor">Electrician</option></a>
+                        </select>
+                     </section>
+                     </section> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightBlock">
+        <ul>
+          <li>
+            <a href="Login.html">Login/sign up</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="container">
+    <h1>Become A Professional</h1>
+
+    <form id="request-form" action="b.php" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="doctor">Doctor</option>
+        <option value="carpenter">Carpenter</option>
+        <option value="plumber">Plumber</option>
+      </select>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" placeholder="Enter any specific requirements or details"></textarea>
+
+      <input type="submit" name="submit" value="Submit Request">
+
+
+    </form>
+</body>

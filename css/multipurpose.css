@@ -1,0 +1,508 @@
+@import url('../fonts/fontawesome-free-5.12.1-web/css/all.css');
+
+@font-face {
+    font-family: "ucglyphs";
+    src: url("ucglyphs.ttf/"),
+
+        url("../fonts/ucglyphs.ttf/") format("opentype");
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: axiforma-regular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+#headerBlock {
+    background: #fff;
+    padding: 10px;
+    height: "45px;"
+}
+
+.leftBlock {
+    width: 70%;
+    background-color: #fff;
+    float: left;
+    /*text-align: right;
+    line-height: 40px; */
+
+}
+
+.rightBlock {
+    width: 20%;
+    float: left;
+    background-color: #fff;
+    padding: 0px;
+    text-align: right;
+    line-height: 30px;
+}
+
+#headerBlock article {
+
+    background-color: #fff;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 290px;
+    margin: 0;
+}
+
+.leftmenu ul,
+.rightBlock ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leftmenu ul li a,
+.rightBlock ul li a {
+
+    color: #666;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.leftmenu ul li {
+    display: inline-block;
+}
+
+.logo {
+    width: 40%;
+    background-color: #fff;
+    float: left;
+}
+
+.leftmenu {
+
+    width: 60%;
+    background-color: #fff;
+    float: left;
+    padding: o auto;
+    line-height: 40px;
+}
+
+.leftmenu b:hover {
+    color: rgb(198, 120, 16);
+}
+
+footer {
+    clear: both;
+}
+
+/* sliderBlock  Css starts here  */
+
+#sliderBlock {
+    background: url('../images/2x_1.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#sliderBlock article {
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+#sliderBlock h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+#sliderBlock p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#sliderBlock form select {
+    padding: 15px;
+    width: 170px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 30px;
+
+}
+
+#sliderBlock form input {
+    width: 400px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+
+
+}
+
+.overlay {
+    background: rgba(77, 77, 77, 0.5);
+    height: 380px;
+}
+
+/* afterSlider article */
+#afterSlider {
+
+
+    background-color: rgb(201, 201, 201);
+    height: 150px;
+
+
+}
+
+
+#afterSlider article {
+    width: 1080px;
+    height: 200px;
+
+    margin: 0 auto;
+
+
+}
+
+#afterSlider article div {
+    float: left;
+    width: 15%;
+    text-align: center;
+    padding: 36px 10px 0px;
+
+}
+
+#afterSlider article div span {
+    font-family: "ucglyphs";
+    font-size: 45px;
+    text-align: center;
+    color: #949494;
+}
+
+#afterSlider article div h2 {
+
+    font-size: 15px;
+    color: #666;
+    font-weight: normal;
+
+}
+
+#afterSlider article div span i {
+    font-size: 40px;
+    color: #666;
+}
+
+/* servicesBlock */
+
+#servicesBlock {
+
+    background-color: #fff;
+    clear: both;
+    padding: 30px;
+    height: 270px;
+}
+
+#servicesBlock article {
+
+    margin: 0 auto;
+
+}
+
+#servicesBlock article div,
+#Wedding_Services article div {
+    width: 24%;
+    float: left;
+    margin: 5px;
+}
+
+#servicesBlock article div img,
+#weeding_Services article div img {
+
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
+/*-- Wedding Services starts here--- */
+#Wedding_Services,
+#Fitness_Services,
+#Massage_Services {
+
+    clear: both;
+    background-color: #fff;
+    height: 300px;
+    padding: 30px;
+}
+
+#Wedding_Services article,
+#Fitness_Services article,
+#Massage_Services article {
+
+    margin: 0 auto;
+    padding: 30px auto;
+
+}
+
+#Wedding_Services article div,
+#Fitness_Services article div,
+#Massage_Services article div {
+    border-radius: 3px;
+
+    width: 300px;
+    float: left;
+    margin: 5px;
+}
+
+#Wedding_Services article div header img,
+#Fitness_Services article div img,
+#Massage_Services article div img {
+
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+}
+
+/* fitness services */
+#professionslider {
+    color: #f4f4f4;
+
+}
+
+.professions {
+    color: #f4f4f4;
+
+}
+
+
+
+
+
+
+/*app section starts here */
+
+#app_Section {
+    clear: both;
+    margin: 0 auto;
+    height: 300px;
+    background-color: #f6f6f6;
+    padding: 40px 0;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* app section  css sends here */
+#app_Section article .appLeft {
+    width: 45%;
+    float: left;
+    text-align: center;
+}
+
+#app_Section article .appRight {
+    text-align: left;
+    width: 55%;
+    float: left;
+}
+
+.appLeft img {
+    width: 220px;
+}
+
+.appRight h1 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 40px 0 0px;
+}
+
+.appRight p {
+    color: #666;
+}
+
+.appRight form select {
+    padding: 15px 30px;
+    border: none;
+}
+
+.appRight form input {
+    padding: 10px 30px;
+    width: 60%;
+    box-sizing: border-box;
+
+    border: none;
+    border-left: 2px solid whitesmoke;
+
+    margin: 0px;
+    left: 0px;
+}
+
+.appRight footer form {
+    background-color: white;
+    width: 80%;
+}
+
+.appRight form button {
+    background-color: #111;
+    right: 75px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    margin: 5px 0;
+
+
+}
+
+.appRight form {
+    position: relative;
+
+
+}
+
+
+#comment-box article {
+
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #666;
+}
+
+#comment-box article div section {
+    width: 32.2%;
+
+    display: inline-block;
+
+    border-right: 1px solid #666;
+
+
+}
+
+#comment-box article div section header h4 {
+    font-family: "ucglyphs";
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(63, 63, 63);
+    background-color: rgb(177, 176, 176);
+    border-radius: 50%;
+    padding: 8px;
+
+
+}
+
+
+#comment-box article div section .left-box {
+
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#comment-box article div section .right-box {
+    display: table-cell;
+    vertical-align: middle;
+    width: 80%;
+    text-align: left;
+    font-size: 13px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+
+    color: #666;
+}
+
+#dialogue-Box article {
+    width: 100%;
+    height: 150px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 25px;
+    margin: 0 auto;
+
+}
+
+#dialogue-Box article div section {
+    display: inline-block;
+    color: #949494;
+    margin-right: 70px;
+
+}
+
+#dialogue-Box article div section header .dialogue-Right-Box {
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+#dialogue-Box article div section main h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+
+
+}
+
+#dialogue-Box article div section div footer {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.webFooter {
+    background-color: rgb(77, 77, 77);
+
+}
+
+.webFooter a:hover {
+    color: #f9f6f6;
+    ;
+}
+
+.webFooter article header,
+.webFooter2 article header {
+    padding: 5px 45px;
+    color: #f6f6f6;
+
+
+}
+
+.webFooter article main ul li,
+.webFooter2 article main ul li {
+    list-style: none;
+    padding: 8px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.webFooter article main ul li a,
+.webFooter2 article main ul li a {
+    text-decoration: none;
+    color: #949494;
+
+}
+
+.webFooter2 {
+    background-color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.footerlast {
+    background-color: black;
+}
+
+.line {
+    color: #949494;
+    padding: 10px 45px;
+
+}
+
+hr {
+    height: 0.001px;
+}
