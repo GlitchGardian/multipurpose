@@ -94,7 +94,8 @@ h6 span {
   color: #050505;
   background-color: #fafbfd;
   font-family: 'unicons';
-  content: '🡦';
+  content: '\1F861';
+  transform: rotate(130deg);
   z-index: 20;
   top: -10px;
   left: -10px;
@@ -105,7 +106,7 @@ h6 span {
 }
 
 .checkbox:checked+label:before {
-  transform: translateX(44px) rotate(-270deg);
+  transform: translateX(44px) rotate(230deg);
 }
 
 .card-3d-wrap {
@@ -328,7 +329,7 @@ h6 span {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 100%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
