@@ -137,14 +137,12 @@ footer {
 
 }
 
-#sliderBlock form input {
-    width: 400px;
+.viewservicebtn{
+    width: auto;
     padding: 15px;
     border: none;
     border-radius: 4px;
     font-size: 18px;
-
-
 }
 
 .overlay {

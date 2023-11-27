@@ -6,7 +6,7 @@
     <title>Multi-Purpose Hiring</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="./fonts/402f5a975c0e4e17589b0ee321929f32.ttf" rel="stylesheet">
-    <link rel="stylesheet"  href="./css/multipurpose.css">
+    <link rel="stylesheet" href="./css/multipurpose.css">
 
 </head>
 <script>
@@ -107,16 +107,24 @@
                 <p>Get instant access to reliabe and affodable services</p>
             </main>
             <footer>
-                <form>
+                <form action="serviceprofessionals.php" method="post">
                     <select>
-                        <option value="Bangalore">Bhavnagar</option>
-                        <option value="Mysore">Ahmedabad</option>
-                        <option value="Mangalore">Rajkot</option>
-                        <option value="Pune">jamnagar</option>
-                        <option value="Mandya">Surat</option>
+                        <option value="Bhavnaga">Bhavnagar</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="jamnagar">jamnagar</option>
+                        <option value="Surat">Surat</option>
                     </select>
-                    <input type="text" placeholder="Search For A Service" />
-                    <p>Eg. Salon At Home,Plumber,Refrigerator,Repair</p>
+                    <select>
+                        <option value="saloon">Saloon</option>
+                        <option value="ac">AC Service And Repair or installation</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="beautyparlour">beautyparlour</option>
+                        <option value="yoga & gym">yoga & gym trainer</option>
+                        <option value="massage">Massage</option>
+                    </select>
+                    <button name="submit" class="viewservicebtn">View Services</button>
                 </form>
             </footer>
         </article>
