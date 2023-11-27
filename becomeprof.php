@@ -15,12 +15,12 @@
     
          $run = mysqli_query($conn,$sql);
 
-         header('Location: response.html');
-
+         header('Location: becomeresponse.html');
+        
         }
 
         else{       
             echo "error". mysqli_error($conn);
         }
-
+        exit(); 
 ?>

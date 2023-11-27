@@ -9,6 +9,7 @@
        
 
         .container {
+            margin-top: 200px;
             text-align: center;
             animation: fadeInUp 1s ease-out;
         }
