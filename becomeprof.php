@@ -28,7 +28,7 @@
     
          $run = mysqli_query($conn,$sql);    
 
-        //  header('Location: becomeresponse.html');
+         header('Location: becomeresponse.html');
         
         }
 
