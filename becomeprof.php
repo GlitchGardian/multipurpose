@@ -7,16 +7,28 @@
     $address = $_POST['address'];
     $service = $_POST['service'];
     $description = $_POST['description'];
+
+    $file_name = $_FILES['profile_photo']['name'];
+    $tmp_name = $_FILES['profile_photo']['tmp_name'];
+    $target_folder = 'profilephotos/'.$file_name;
+    
         
+    if (move_uploaded_file($tmp_name, $target_folder)) {
+        echo 'File Uploaded Successfully';
+    } else {
+        echo 'Error Uploading File';
+    }
+
+
      $conn = mysqli_connect("localhost","root","","multipurpose");
 
     if ($conn){
     
-         $sql = "INSERT INTO professionals (name, email, phone, city, address, service, description) VALUES ('$name', '$email', '$phone','$city', '$address', '$service', '$description')";
+         $sql = "INSERT INTO professionals (profile_photo,name, email, phone, city, address, service, description) VALUES ('$target_folder','$name', '$email', '$phone','$city', '$address', '$service', '$description')";
     
-         $run = mysqli_query($conn,$sql);
+         $run = mysqli_query($conn,$sql);    
 
-         header('Location: becomeresponse.html');
+        //  header('Location: becomeresponse.html');
         
         }
 

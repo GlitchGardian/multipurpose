@@ -72,7 +72,12 @@
   <div class="container">
     <h1>Become A Professional</h1>
 
-    <form id="request-form" action="becomeprof.php" method="POST">
+    <form id="request-form" action="becomeprof.php" method="POST" enctype="multipart/form-data">
+   
+      <label for="profilephoto">Your Photo:</label>
+      <input type="file" id="profilephoto" name="profile_photo" placeholder="Enter your name" required>
+      <p>Select photo under 2MB & Select only png/jpeg.</p>
+
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -97,6 +102,7 @@
       <label for="service">Select Service:</label>
       <select id="service" name="service" required>
         <option value="" disabled>Select a service</option>
+        <option value="ItSoftwareEngineer">IT Software Engineer</option>
         <option value="doctor">Doctor</option>
         <option value="carpenter">Carpenter</option>
         <option value="plumber">Plumber</option>
