@@ -29,8 +29,9 @@ if ($conn) {
     $run = mysqli_query($conn, $sql);
 
     header('Location: becomeresponse.html');
-
-} else {
+    
+} 
+else {
     echo "error" . mysqli_error($conn);
 }
 exit();

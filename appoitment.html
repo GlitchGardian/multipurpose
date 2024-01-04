@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./css/multipurpose.css">
+  <title>Saloon Services at Home - Appointment Form</title>
+  <link rel="stylesheet" href="./css/multipurpose.css">
+  <style>
+    body{
+        overflow-y: hidden;
+    }
+
+    .form-section {
+      background-color: #f9f9f9;
+      padding: 30px 20px;
+      text-align: center;
+      color: #050000;
+      animation: fadeIn 1s ease; /* Animation on form load */
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .appointment-form {
+      max-width: 400px;
+      margin: 0 auto;
+      opacity: 0; /* Hidden initially for animation */
+      animation: fadeInForm 1s forwards;
+      animation-delay: 0.5s; /* Delayed animation for form */
+    }
+
+    /* Input and button styles */
+    .appointment-form input[type="text"],
+    .appointment-form input[type="tel"],
+    .appointment-form input[type="email"],
+    .appointment-form select,
+    .appointment-form textarea,
+    .appointment-form input[type="date"],
+    .appointment-form input[type="submit"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      transition: all 0.3s ease; /* Smooth transition on hover/focus */
+    }
+
+    .appointment-form input[type="submit"] {
+      background-color: #ff8800;
+      color: #050000;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transition on hover */
+    }
+
+    .appointment-form input[type="submit"]:hover {
+      background-color: #e67e00;
+    }
+
+    /* Animation keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInForm {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .form-section {
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for form */
+      padding: 30px 20px;
+      text-align: center;
+      color: #050000;
+      animation: fadeIn 1s ease; /* Animation on form load */
+      margin: 50px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    }
+  </style>
+</head>
+<body>
+  <!-- Your existing sections... -->
+  <section id="headerBlock">
+    <article >
+        <div class="leftBlock">
+        <div class="logo">
+            <img src="images/Multi-Purpose Hiring System (6).png"  alt="logo" onclick="index()">
+        </div>
+        
+        <div class="leftmenu">
+            <ul>
+                <li>
+                    <a href="#" onclick="aboutus()">About us</a>
+                </li>
+                <li>
+                    <a href="#" onclick="aboutus()">Contact Us</a>
+                </li>
+                <li><section id="professionslider">
+                    <section class="professions">
+                   <a href="#" onclick="form()">Become A Professional </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="rightBlock">
+        <ul>
+            <li>
+                <a href="Login.html">Login/sign up</a>
+            </li>
+        </ul>
+    </div>
+    </article> 
+</section>
+  <section class="form-section">
+    <h2>Book an Appointment</h2>
+    <form class="appointment-form" action="./php/booking_handler.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <select name="service" required>
+        <option value="" disabled selected>Select Service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Manicure">Manicure</option>
+        <option value="Hair Wash">Hair Wash</option>
+        <!-- Add more service options here -->
+      </select>
+      <input type="date" name="appointment_date" required>
+      <textarea name="message" placeholder="Additional Information (optional)" rows="4"></textarea>
+      <input type="submit" value="Book Appointment">
+    </form>
+  </section>
+
+  <!-- Your remaining sections... -->
+
+</body>
+</html>
