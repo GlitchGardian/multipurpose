@@ -10,10 +10,10 @@ $Cmessage = $_POST['message'];
 $conn = mysqli_connect('localhost','root','','multipurpose');
 
 if($conn){
-    $query = "INSERT INTO booking(name , phone,email,service,date,message) values($Cname,$Cphone,$Cemail,$Cservice,$Cdate,$Cmessage)";
+    $query = "INSERT INTO booking(name , phone,email,service,date,message) values('$Cname','$Cphone','$Cemail','$Cservice','$Cdate','$Cmessage')";
     $result = mysqli_query($conn, $query);
 
-    header("Location: bookingresponse.html");
+    header("Location: /multipurpose/bookingresponse.html");
 }
 else{
     echo "Error :". mysqli_error($conn);

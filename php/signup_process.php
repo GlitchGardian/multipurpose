@@ -14,7 +14,7 @@ if (!$conn) {
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        header('Location: signupsuccess.html');
+        header('Location: /multipurpose/signupsuccess.html');
         exit(); 
     } else {
         echo 'Oops! Something went wrong. Please try again later.';

@@ -28,7 +28,7 @@ if ($conn) {
 
     $run = mysqli_query($conn, $sql);
 
-    header('Location: becomeresponse.html');
+    header('Location: /multipurpose/becomeresponse.html');
     
 } 
 else {
